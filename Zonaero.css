@@ -47,6 +47,7 @@ header nav a {
   width: 250px;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  color: rgb(0, 0, 0) !important;
 }
 
 .project-card img {

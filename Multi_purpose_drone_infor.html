@@ -1,38 +1,237 @@
-<!DOCTYPE html>
-
-<link rel = "stylesheet" href = "Multi_purpose_drone_infor.css">
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-</style>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZonAero | Multi-purpose Drone</title>
+  <link rel="stylesheet" href="Multi_purpose_drone_infor.css" />
 </head>
 
 <body>
+  <!-- Sticky Nav -->
+  <nav class="topnav reveal" data-delay="1">
+    <a class="brand" href="#top">
+      <div class="brand-badge" aria-hidden="true"></div>
+      <div>
+        <div class="brand-title">ZonAero</div>
+        <div class="brand-sub">Multi-purpose Drone Showcase</div>
+      </div>
+    </a>
 
-<div class="header">
-    <div class="back" onclick="history.back()">←</div>
-    <div class="title">Multi-purpose Drone</div>
-</div>
+    <div class="navlinks">
+      <a href="#highlights">Highlights</a>
+      <a href="#videos">Videos</a>
+      <a href="#modules">Socket Modules</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="index.html">← Back</a>
+    </div>
+  </nav>
 
-<p style="padding:15px">เนื้อหาเว็บ</p>
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <div class="hero-bg reveal zoom" data-delay="1" aria-hidden="true"></div>
 
-</body>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <title>
-            V.A.T. drone Controll wab
-        </title>
-    </head>
-    <body>
-        <h1> 
-            pop
+    <div class="container hero-inner">
+      <div>
+        <div class="hero-kicker reveal" data-delay="2">
+          <span class="dot" aria-hidden="true"></span>
+          Developed in Thailand • Custom MCU Flight Controller • Modular Design
+        </div>
+
+        <h1 class="hero-title reveal" data-delay="3">
+          <span>Multi-purpose Drone</span><br/>
+          with Socket Module System
         </h1>
-        <video controls width="720">
-            <source src="video/noise.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
+
+        <p class="hero-sub reveal" data-delay="4">
+          โดรนอเนกประสงค์ที่พัฒนาระบบหลักด้วยตัวเอง: Flight Controller (MCU),
+          Remote อเนกประสงค์ และระบบ Socket Module เพื่อสลับภารกิจได้ในลำเดียว
+        </p>
+
+        <div class="hero-actions reveal" data-delay="5">
+          <a class="btn primary" href="#videos">▶ Watch demo</a>
+          <a class="btn" href="#contact">✉ Contact</a>
+          <a class="btn" href="#modules">🧩 Explore modules</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal right" data-delay="3">
+        <h3 style="margin:0 0 6px;">Quick Summary</h3>
+        <p style="margin:0;color:rgba(230,238,252,.72);line-height:1.6;">
+          ระบบออกแบบให้ “เพิ่ม/ถอด” โมดูลได้เร็ว เพื่อเปลี่ยนงาน: เกษตร, สำรวจ, ส่งของ,
+          กล้อง, หรือภารกิจเฉพาะทางอื่น ๆ
+        </p>
+
+        <div class="statgrid">
+          <div class="stat">
+            <div class="k">Core</div>
+            <div class="v">MCU FC</div>
+          </div>
+          <div class="stat">
+            <div class="k">Concept</div>
+            <div class="v">Socket</div>
+          </div>
+          <div class="stat">
+            <div class="k">Remote</div>
+            <div class="v">Custom</div>
+          </div>
+          <div class="stat">
+            <div class="k">Use-case</div>
+            <div class="v">Modular</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Highlights -->
+  <section class="section" id="highlights">
+    <div class="container">
+      <h2 class="section-title reveal" data-delay="1">Highlights</h2>
+      <p class="section-desc reveal" data-delay="2">
+        จุดเด่นของโปรเจกต์ที่ทำให้ต่างจากโดรนทั่วไป: โครงสร้างระบบ + การขยายภารกิจแบบโมดูล
+      </p>
+
+      <div class="grid3">
+        <div class="card reveal left" data-delay="1">
+          <h3>Custom Flight Controller</h3>
+          <p>พัฒนาบอร์ด/เฟิร์มแวร์เองบน MCU เพื่อควบคุมการบินและเชื่อมต่อระบบเสริม</p>
+          <div class="pill">⚡ Real-time control</div>
+        </div>
+
+        <div class="card reveal" data-delay="2">
+          <h3>Multi-purpose Remote</h3>
+          <p>รีโมทอเนกประสงค์ ออกแบบให้รองรับการสั่งงานโมดูลและโหมดภารกิจต่าง ๆ</p>
+          <div class="pill">🎮 Flexible mapping</div>
+        </div>
+
+        <div class="card reveal right" data-delay="3">
+          <h3>Socket Module System</h3>
+          <p>หัวใจของโปรเจกต์: ถอด-เสียบโมดูลเพื่อเปลี่ยนงานได้เร็วในโดรนลำเดียว</p>
+          <div class="pill">🧩 Plug & Play concept</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Videos -->
+  <section class="section" id="videos">
+    <div class="container">
+      <h2 class="section-title reveal" data-delay="1">Videos</h2>
+      <p class="section-desc reveal" data-delay="2">
+        ตัวอย่างการทำงานและโชว์เคสระบบ (วิดีโอเล่นอัตโนมัติแบบ loop/muted)
+      </p>
+
+      <div class="video-wrap">
+        <h3 class="reveal" data-delay="1" style="margin:0 0 10px;">Video Showcase</h3>
+        <video class="video-center reveal zoom" data-delay="2"
+               autoplay loop muted playsinline preload="metadata">
+          <source src="video/noise.mp4" type="video/mp4" />
         </video>
-    </body>
+
+        <div class="script reveal" data-delay="3">
+          โดรนอเนกประสงค์ ที่ได้มีการพัฒนาระบบขึ้นมาโดยคนไทย
+          ซึ่งใช้ MCU เป็น flightcontroller และมี Remote อเนกประสงค์ที่พัฒนาเอง
+          เพื่อให้ทำงานรวมกับระบบ <span class="gold">Socketmodule</span>
+          ที่พัฒนาขึ้นเพื่อการใช้งานที่หลากหลาย
+        </div>
+
+        <div style="height:26px;"></div>
+
+        <h3 class="reveal" data-delay="1" style="margin:0 0 10px;">Socketmodule Showcase</h3>
+        <video class="video-center reveal zoom" data-delay="2"
+               autoplay loop muted playsinline preload="metadata">
+          <source src="video/golf.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modules -->
+  <section class="section" id="modules">
+    <div class="container">
+      <h2 class="section-title reveal" data-delay="1">Socket Modules</h2>
+      <p class="section-desc reveal" data-delay="2">
+        ตัวอย่างแนวคิดโมดูล (คุณค่อยเติมชื่อโมดูลจริงของคุณได้เลย)
+      </p>
+
+      <div class="grid3">
+        <div class="card reveal left" data-delay="1">
+          <h3>Agriculture Module</h3>
+          <p>งานเกษตร เช่น พ่น/หว่าน/ควบคุมระบบปั๊ม และ telemetry เฉพาะทาง</p>
+          <div class="pill">🌱 Field-ready</div>
+        </div>
+
+        <div class="card reveal" data-delay="2">
+          <h3>Survey / Mapping Module</h3>
+          <p>เพิ่มกล้อง/เซนเซอร์ เพื่อสำรวจพื้นที่ บันทึกเส้นทาง หรือเก็บข้อมูล</p>
+          <div class="pill">🛰 Data capture</div>
+        </div>
+
+        <div class="card reveal right" data-delay="3">
+          <h3>Delivery / Payload Module</h3>
+          <p>รองรับการขนส่ง/ปล่อย payload และระบบความปลอดภัยตามภารกิจ</p>
+          <div class="pill">📦 Payload</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal" data-delay="1">About Me</h2>
+      <p class="section-desc reveal" data-delay="2">
+        แนะนำตัวสั้น ๆ เพื่อใช้ใน Portfolio
+      </p>
+
+      <div class="card reveal" data-delay="3">
+        <p style="margin:0;line-height:1.8;color:rgba(230,238,252,.75);">
+          - I am Atitikun Pomsuwon, passionate about “Aerospace”, “Robotics”, and “DIY engineering projects”<br/>
+          - Currently studying at St. Teresa School M.5 St 76<br/>
+          - Age: 17
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title reveal" data-delay="1">Contact</h2>
+      <p class="section-desc reveal" data-delay="2">
+        ช่องทางติดต่อ (กดได้ทันที)
+      </p>
+
+      <div class="contact-row">
+        <a class="btn reveal" data-delay="3" href="mailto:iabqosochqjz@gmail.com">✉ Email</a>
+        <a class="btn reveal" data-delay="4" href="tel:0824831422">📞 Phone</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="reveal" data-delay="1">
+    <div class="container" style="text-align:center;">
+      <p style="margin:0;">© 2025 ZonAero. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Reveal JS -->
+  <script>
+    (function () {
+      const els = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            io.unobserve(entry.target); // เล่นครั้งเดียว (ถ้าอยากให้เล่นซ้ำ บอกผม เดี๋ยวแก้)
+          }
+        });
+      }, { threshold: 0.18, rootMargin: "0px 0px -10% 0px" });
+
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
+</body>
 </html>
